@@ -1,6 +1,35 @@
 /* Google fonts Inter  */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;600;700;800;900&display=swap");
+.scrollTop {
+  position: fixed;
+  top: 500px;
+  right: 40px;
+  width: 60px;
+  height: 60px;
+  background: #FFFFFF url("Vector.svg");
+  -webkit-box-shadow: 0 0px 10px #FFFFFF;
+          box-shadow: 0 0px 10px #FFFFFF;
+  border-radius: 50%;
+  background-size: 24px;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  z-index: 4;
+  visibility: hidden;
+  opacity: 100;
+}
 
+.scrollTop:hover {
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+}
+
+.active {
+  visibility: visible;
+  opacity: 1;
+}
 /* General Styles  */
 * {
   padding: 0;
@@ -69,11 +98,11 @@ button {
 }
 
 .pt-60 {
-  padding-top: 60px;
+  padding-top: 30px;
 }
 
 .pb-60 {
-  padding-bottom: 60px;
+  padding-bottom: 30px;
 }
 
 .max-width-75 {
@@ -93,8 +122,9 @@ button {
 /* Header section  */
 
 .header-section {
-  padding: 30px 130px;
-  position: fixed;
+  background-color: #fccdcd;
+  padding: 10px 130px;
+  /* position: fixed; */
   top: 0;
   left: 0;
   width: 100%;
@@ -118,9 +148,10 @@ button {
 
 .navbar a {
   color: #000;
-  font-weight: 500;
+  font-size: 16.5px;
+  font-weight: 600;
   position: relative;
-  transition: all 500ms;
+  transition: all 600ms;
 }
 
 .navbar a::before {
@@ -130,7 +161,7 @@ button {
   bottom: -8px;
   height: 1px;
   width: 0;
-  background: #8c30f5;
+  background: #ff6e6e;
   transition: all 500ms;
 }
 
@@ -139,7 +170,7 @@ button {
 }
 
 .navbar a:hover {
-  color: #8c30f5;
+  color: #ff6e6e;
 }
 
 .mobile-menu {
@@ -185,14 +216,14 @@ button {
 
 .hero-section h1 {
   color: #18191f;
-  font-size: 58px;
+  /* font-size: 58px; */
   font-weight: 800;
-  padding-top: 15%;
+  /* padding-top: 15%; */
 }
 
 .hero-section a {
   padding: 13px 19px;
-  background: #8c30f5;
+  background: #ff6e6e;
   color: #fff;
   border-radius: 6px;
   position: relative;
@@ -206,7 +237,7 @@ button {
 }
 
 .hero-section .phone-case-img {
-  max-width: 280px;
+  max-width: 100%;
   margin: 0 auto;
   display: flex;
 }
@@ -230,6 +261,8 @@ button {
   margin-bottom: 40px;
   padding: 45px 12px;
   transition: all 400ms;
+  box-shadow: 13px 5px 44px #ddd;
+  border-radius: 2rem;
 }
 
 .single-feature h4 {
@@ -244,7 +277,7 @@ button {
 }
 
 .single-feature:hover {
-  box-shadow: 13px 5px 44px #ddd;
+  box-shadow: 13px 5px 44px rgb(211, 164, 164);
 }
 
 /* Customer section  */
@@ -349,7 +382,7 @@ button {
 
 .headline-section a {
   display: flex;
-  color: #8c30f5;
+  color: #ff6e6e;
   align-items: center;
 }
 
@@ -393,6 +426,26 @@ button {
   padding-top: 10px;
 }
 
+/* @media (max-width:400px){
+  .products .swiper-slide {
+    width: 80%;
+    height: 70%;
+  }
+  
+  .products .swiper-slide img {
+    display: block;
+    width: 90%;
+    height: 300px;
+  }
+  html{
+    font-size: 50%;
+  }
+
+  .heading{
+    font-size: 3.5rem;
+  }
+
+} */
 .manage-project-section p {
   color: #18191f;
   padding-bottom: 40px;
@@ -409,11 +462,17 @@ button {
 
 .manage-project-section .right-section .img-1 {
   position: relative;
+  width: 50%;
+  margin-right: 30px;
+    height: 50%;
   top: -40px;
 }
 
 .manage-project-section .right-section .img-2 {
   position: relative;
+  width: 50%;
+  
+    height: 50%;
   top: 40px;
 }
 
@@ -441,4 +500,26 @@ button {
 
 .footer-section .social-apps img {
   margin-bottom: 10px;
+}
+
+.products .swiper-container {
+  width: 100%;
+  padding-top: 2rem;
+  padding-bottom: 5rem;
+}
+
+.products .swiper-slide {
+  width: 80%;
+  height: 70%;
+}
+
+.products .swiper-slide img {
+  display: block;
+  width: 90%;
+  height: 580px;
+}
+.products .swiper-wrapper {
+  cursor: grab;
+  transition-duration: 0ms;
+  transform: translate3d(-1732.5px, 0px, 0px);
 }

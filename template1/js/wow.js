@@ -1,6 +1,19 @@
 /*! WOW wow.js - v1.3.0 - 2016-10-04
  * https://wowjs.uk
  * Copyright (c) 2016 Thomas Grainger; Licensed MIT */
+
+window.addEventListener('scroll', () => {
+    var scroll = document.querySelector('.scrollTop');
+    scroll.classList.toggle("active", window.scrollY > 1000)
+})
+function totop(){
+    window.scrollTo({
+      top : 0,
+      behavior:'smooth',
+      
+    })
+    console.log('abc')
+  }
 ! function(a, b) {
     if ("function" == typeof define && define.amd) define(["module", "exports"], b);
     else if ("undefined" != typeof exports) b(module, exports);

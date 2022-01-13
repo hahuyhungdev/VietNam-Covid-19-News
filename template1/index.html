@@ -8,6 +8,7 @@
     <!-- Fevicon icon  -->
     <link rel="icon" type="image/png" href="img/fevicon.png" />
     <!-- Bootstrap styles  -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <!-- Bootstrap styles  -->
     <link rel="stylesheet" href="css/animate.min.css" />
@@ -25,6 +26,7 @@
   </head>
   <body>
     <!-- Start Header Section -->
+    <div  class="scrollTop active" onclick="totop()"></div>
     <div class="header-section" id="header-section">
       <div class="container-fluid">
         <div class="row">
@@ -39,20 +41,21 @@
                   d-none d-sm-none d-xs-none d-md-none d-lg-flex d-xl-flex
                 "
               >
+              
                 <li class="logo-container wow fadeInUp" data-wow-delay="0.1s">
-                  <a href="#">About</a>
+                  <a href="#about">Thông tin</a>
                 </li>
                 <li class="logo-container wow fadeInUp" data-wow-delay="0.2s">
-                  <a href="#">Products</a>
+                  <a href="#products">Sản phẩm</a>
                 </li>
-                <li class="logo-container wow fadeInUp" data-wow-delay="0.3s">
+                <!-- <li class="logo-container wow fadeInUp" data-wow-delay="0.3s">
                   <a href="#">Pricing</a>
-                </li>
+                </li> -->
                 <li class="logo-container wow fadeInUp" data-wow-delay="0.4s">
-                  <a href="#">Blog</a>
+                  <a href="#blog">Câu chuyện</a>
                 </li>
                 <li class="logo-container wow fadeInUp" data-wow-delay="0.5s">
-                  <a href="#">Jobs</a>
+                  <a href="#resoures">Tài nguyên</a>
                 </li>
               </ul>
             </div>
@@ -64,8 +67,12 @@
             "
           >
             <div class="social-apps">
+              <a href="https://github.com/ZeroRyo/VietNam-Covid-19-News/raw/main/apk/app-release.apk">
               <img src="img/hero/google-play.png" alt="" />
-              <img src="img/hero/app-store.png" alt="" />
+            </a>
+              <a href="https://github.com/ZeroRyo/VietNam-Covid-19-News/raw/main/apk/app-release.apk">
+                <img src="img/hero/app-store.png" alt="" />
+              </a>
             </div>
           </div>
           <div
@@ -86,40 +93,42 @@
       >
         <ul>
           <li>
-            <a href="#">About</a>
+            <a href="#about">Thông tin</a>
           </li>
           <li>
-            <a href="#">Products</a>
+            <a href="#products">Sản phẩm</a>
           </li>
-          <li>
+          <!-- <li>
             <a href="#">Pricing</a>
+          </li> -->
+          <li>
+            <a href="#blog">Câu chuyện</a>
           </li>
           <li>
-            <a href="#">Blog</a>
-          </li>
-          <li>
-            <a href="#">Jobs</a>
+            <a href="#resoures">Tài nguyên</a>
           </li>
         </ul>
       </div>
     </div>
     <!-- /End Header Section -->
     <!-- Start Hero Section  -->
-    <div class="hero-section">
+    <div id="header" class="hero-section">
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
             <h1 class="wow fadeInUp" data-wow-delay="0.1s">
-              Organise projects.<br />
-              Get more done.
+              Ứng dụng tin tức covid Việt Nam<br />
             </h1>
+            <h3 class="wow fadeInUp" data-wow-delay="0.2s">
+             VietNam-Covid-19 app
+            </h3>
             <a class="wow fadeInUp" data-wow-delay="0.2s" href="#"
-              >Get Started</a
+              >Bắt đầu tham quan</a
             >
           </div>
           <div class="col-lg-6">
             <img
-              src="img/hero/iPhone.png"
+              src="./../screenshot/banner1.png"
               class="
                 phone-case-img
                 bubble-animation
@@ -132,67 +141,18 @@
       </div>
     </div>
     <!-- /End Hero Section  -->
-    <!-- Start Company logos  -->
-    <div class="companies-section pt-60 pb-60">
-      <div class="container">
-        <div class="row">
-          <div class="col-6 col-sm-6 col-xs-6 col-lg-2">
-            <img
-              src="img/company-logo/logo-1.png"
-              class="wow fadeInUp"
-              data-wow-delay="0.1s"
-            />
-          </div>
-          <div class="col-6 col-sm-6 col-xs-6 col-lg-2">
-            <img
-              src="img/company-logo/logo-2.png"
-              class="wow fadeInUp"
-              data-wow-delay="0.2s"
-            />
-          </div>
-          <div class="col-6 col-sm-6 col-xs-6 col-lg-2">
-            <img
-              src="img/company-logo/logo-3.png"
-              class="wow fadeInUp"
-              data-wow-delay="0.3s"
-            />
-          </div>
-          <div class="col-6 col-sm-6 col-xs-6 col-lg-2">
-            <img
-              src="img/company-logo/logo-4.png"
-              class="wow fadeInUp"
-              data-wow-delay="0.4s"
-            />
-          </div>
-          <div class="col-6 col-sm-6 col-xs-6 col-lg-2">
-            <img
-              src="img/company-logo/logo-5.png"
-              class="wow fadeInUp"
-              data-wow-delay="0.5s"
-            />
-          </div>
-          <div class="col-6 col-sm-6 col-xs-6 col-lg-2">
-            <img
-              src="img/company-logo/logo-6.png"
-              class="wow fadeInUp"
-              data-wow-delay="0.6s"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- /End Company logos  -->
+
     <!-- Start Features logos  -->
-    <div class="features-section pt-60 pb-60">
+    <div id="about" class="features-section pt-60 pb-60" style="background: #d5fafc;border-bottom-style: solid;
+    border-bottom-color: coral;" >
       <div class="container">
         <div class="row section-title">
           <div class="col-lg-6 m-auto">
             <h1 class="text-center pb-15 wow fadeInUp" data-wow-delay="0.1s">
-              Tailor-made features
+              Các tính năng nổi bật
             </h1>
             <p class="text-center pb-50 wow fadeInUp" data-wow-delay="0.2s">
-              Lorem ipsum is common placeholder text used to demonstrate the
-              graphic elements of a document or visual presentation.
+              Thống kế tổng số ca, tử vong, phục hồi ở Việt Nam theo tài liệu an toàn và chính xác nhất.
             </p>
           </div>
         </div>
@@ -200,193 +160,66 @@
           <div class="col-12 col-sm-6 col-xs-12 col-md-6 col-lg-4">
             <div class="single-feature wow fadeInUp" data-wow-delay="0.3s">
               <img src="img/features/feature-1.png" alt="" />
-              <h4>Robust workflow</h4>
+              <h4>Cách thành phần thể hiện trực quan</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                erat nibh tristique ipsum.
+                Biểu đồ các trường hợp COVID-19 của Việt Nam theo các tỉnh.
               </p>
             </div>
           </div>
           <div class="col-12 col-sm-6 col-xs-12 col-md-6 col-lg-4">
             <div class="single-feature wow fadeInUp" data-wow-delay="0.4s">
               <img src="img/features/feature-2.png" alt="" />
-              <h4>Flexibility</h4>
+              <h4>Số liệu tiêm chủng chi tiết</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                erat nibh tristique ipsum.
+                Thống kê, tìm kiếm nhanh chóng về tiêm chủng các khu vực trong toàn quốc 
               </p>
             </div>
           </div>
           <div class="col-12 col-sm-6 col-xs-12 col-md-6 col-lg-4">
             <div class="single-feature wow fadeInUp" data-wow-delay="0.5s">
               <img src="img/features/feature-3.png" alt="" />
-              <h4>User friendly</h4>
+              <h4>Các tin tức mới nhất cập nhật từng giờ</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                erat nibh tristique ipsum.
+                Đọc tin tức Covid-19 tại Việt Nam với giao diện của báo thanh niên.
               </p>
             </div>
           </div>
           <div class="col-12 col-sm-6 col-xs-12 col-md-6 col-lg-4">
             <div class="single-feature wow fadeInUp" data-wow-delay="0.6s">
               <img src="img/features/feature-4.png" alt="" />
-              <h4>Multiple layouts</h4>
+              <h4>Bản đồ vùng dịch nhiều lớp màu, số liệu rõ ràng.</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                erat nibh tristique ipsum.
+               Thống kê các trường hợp COVID-19 Việt Nam theo các tỉnh, khu vực.
               </p>
             </div>
           </div>
           <div class="col-12 col-sm-6 col-xs-12 col-md-6 col-lg-4">
             <div class="single-feature wow fadeInUp" data-wow-delay="0.7s">
               <img src="img/features/feature-5.png" alt="" />
-              <h4>Better components</h4>
+              <h4>Nhanh chóng, tiện lợi</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                erat nibh tristique ipsum.
+               Phương thức liên hệ nhanh chóng khi ứng dụng tích hợp sẵn liên hệ tổng đài.
               </p>
             </div>
           </div>
           <div class="col-12 col-sm-6 col-xs-12 col-md-6 col-lg-4">
             <div class="single-feature wow fadeInUp" data-wow-delay="0.8s">
               <img src="img/features/feature-6.png" alt="" />
-              <h4>Well organised</h4>
+              <h4>Tối ưu hóa trải nghiệm</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                erat nibh tristique ipsum.
+                Ứng dụng được thiết kế theo phong cách iOS và Android được tối ưu để khách hàng có thể trải nghiệm được tốt nhất.
               </p>
             </div>
           </div>
         </div>
       </div>
     </div>
+
     <!-- /End Features logos  -->
-    <!-- Start Customer section -->
-    <div class="customer-section pt-60 pb-60">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <img
-              src="img/customers/quotes.png"
-              alt="Quotes"
-              class="quotes-img"
-            />
-            <h1 class="wow fadeInUp" data-wow-delay="0.1s">
-              Real Stories from<br />
-              Real Customers
-            </h1>
-            <p class="wow fadeInUp" data-wow-delay="0.2s">
-              Get inspired by these stories.
-            </p>
-            <div
-              class="customer-block max-width-75 float-right wow fadeInUp"
-              data-wow-delay="0.4s"
-            >
-              <img src="img/customers/customer-1.png" alt="" />
-              <p>
-                To quickly start my startup landing page design, I was looking
-                for a landing page UI Kit. Landify is one of the best landing
-                page UI kit I have come across. It’s so flexible, well organised
-                and easily editable.
-              </p>
-              <span class="customer-name">Floyd Miles</span><br />
-              <span class="customer-position">Vice President, GoPro</span>
-            </div>
-          </div>
-          <div class="col-lg-6">
-            <div class="customer-block wow fadeInUp" data-wow-delay="0.5s">
-              <img src="img/customers/customer-2.png" alt="" />
-              <p>
-                I used landify and created a landing page for my startup within
-                a week. The Landify UI Kit is simple and highly intuitive, so
-                anyone can use it.
-              </p>
-
-              <span class="customer-name">Jane Cooper</span><br />
-              <span class="customer-position">CEO, Airbnb</span>
-            </div>
-            <div
-              class="customer-block max-width-75 wow fadeInUp"
-              data-wow-delay="0.6s"
-            >
-              <img src="img/customers/customer-3.png" alt="" />
-              <p>Landify saved our time in designing my company page.</p>
-
-              <span class="customer-name">Kristin Watson</span><br />
-              <span class="customer-position">Co-Founder, BookMyShow</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- /End Customer section -->
-    <!-- Start Achivment section  -->
-    <div class="achivement-section pt-60 pb-60">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-5">
-            <h1 class="wow fadeInUp" data-wow-delay="0.1s">
-              Our 18 years of achievements
-            </h1>
-            <p class="wow fadeInUp" data-wow-delay="0.2s">
-              With our super powers we have reached this
-            </p>
-          </div>
-          <div class="col-lg-7">
-            <div class="row">
-              <div class="col-lg-6">
-                <div
-                  class="single-achivement wow fadeInUp"
-                  data-wow-delay="0.4s"
-                >
-                  <img src="img/achivements/1.png" alt="" />
-                  <div class="text">
-                    <h4>10,000+</h4>
-                    <p>Downloads per day</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div
-                  class="single-achivement wow fadeInUp"
-                  data-wow-delay="0.6s"
-                >
-                  <img src="img/achivements/2.png" alt="" />
-                  <div class="text">
-                    <h4>2 Million</h4>
-                    <p>Users</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div
-                  class="single-achivement wow fadeInUp"
-                  data-wow-delay="0.8s"
-                >
-                  <img src="img/achivements/3.png" alt="" />
-                  <div class="text">
-                    <h4>500+</h4>
-                    <p>Clients</p>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-6">
-                <div class="single-achivement wow fadeInUp" data-wow-delay="1s">
-                  <img src="img/achivements/4.png" alt="" />
-                  <div class="text">
-                    <h4>140</h4>
-                    <p>Countries</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- /End Achivment section  -->
+  
+   
     <!-- Start Headline Section  -->
-    <div class="headline-section pt-60 pb-60">
+    <!-- <div class="headline-section pt-60 pb-60">
       <div class="container">
         <div class="row align-items-center">
           <div class="col-lg-6">
@@ -411,78 +244,172 @@
           </div>
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- /End Headline Section  -->
-    <!-- Start Trends Section  -->
-    <div class="trends-section pt-60 pb-60">
-      <div class="container">
-        <div class="row align-items-center trends-row">
-          <div class="col-lg-6">
-            <h1
-              class="
-                wow
-                fadeInUp
-                d-none d-sm-none d-xs-none d-md-block d-lg-block d-xl-block
-              "
-              data-wow-delay="0.2s"
-            >
-              Enter the world of all<br />
-              fashion trends
-            </h1>
-            <h1
-              class="
-                wow
-                fadeInUp
-                d-block d-sm-block d-xs-block d-md-none d-lg-none d-xl-none
-              "
-              data-wow-delay="0.2s"
-            >
-              Enter the world of all fashion trends
-            </h1>
-          </div>
-          <div class="col-lg-6">
-            <p class="wow fadeInUp" data-wow-delay="0.4s">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              Condimentum diam orci pretium a pharetra, feugiat cursus. Dictumst
-              risus, sem egestas odio cras adipiscing vulputate. Nisi, risus in
-              suscipit non. Non commodo volutpat, pharetra, vel.
-            </p>
+    <section id="products" class="products" >
+      
+      <div class="swiper-container image-slider">
+        <h1 class="text-center pb-15 wow fadeInUp" data-wow-delay="0.1s">
+          Tổng quan về giao diện ứng dụng
+        </h1>
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./../screenshot/banner1.png" alt=""></div>
+            <div class="swiper-slide"><img src="./../screenshot/banner2.png" alt=""></div>
+            <div class="swiper-slide"><img src="./../screenshot/dashboard.png" alt=""></div>
+            <div class="swiper-slide"><img src="./../screenshot/drawer.png" alt=""></div>
+            <div class="swiper-slide"><img src="./../screenshot/map.png" alt=""></div>
+            <div class="swiper-slide"><img src="./../screenshot/news.png" alt=""></div>
+            <div class="swiper-slide"><img src="./../screenshot/vaccin.png" alt=""></div>
+        </div>
+    </div>
+    </section>
+      <!-- Start Customer section -->
+      <div id="blog" class="customer-section pt-60 pb-60">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6">
+              <img
+                src="img/customers/quotes.png"
+                alt="Quotes"
+                class="quotes-img"
+              />
+              <h1 class="wow fadeInUp" data-wow-delay="0.1s">
+                Những câu chuyện có thật từ<br />
+                Khách hàng thực sự
+              </h1>
+              <p class="wow fadeInUp" data-wow-delay="0.2s">
+                Lấy cảm hứng từ những câu chuyện này.
+              </p>
+              <div
+                class="customer-block max-width-75 float-right wow fadeInUp"
+                data-wow-delay="0.4s"
+              >
+                <img src="img/customers/customer-1.png" alt="" />
+                <p>
+                  Để nhanh chóng bắt đầu xem tình hình dịch bệnh của tỉnh, tôi đã tìm
+                  một ứng dụng. VietNam-Covid-19 là một trong những điểm hạ cánh tốt nhất
+                  bộ giao diện người dùng trang mà tôi đã xem qua. Nó rất linh hoạt, được tổ chức tốt
+                  và có thể chỉnh sửa dễ dàng.
+                </p>
+                <span class="customer-name">Floyd Miles</span><br />
+                <span class="customer-position">Vice President, GoPro</span>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="customer-block wow fadeInUp" data-wow-delay="0.5s">
+                <img src="img/customers/customer-2.png" alt="" />
+                <p>
+                  Tôi đã sử dụng VietNam-Covid-19 app và giới thiệu cho các thành viên trong gia đình mình sử dụng. VietNam-Covid-19 app Kit rất đơn giản và trực quan, vì vậy bất kỳ ai cũng có thể sử dụng nó.
+                </p>
+  
+                <span class="customer-name">Jane Cooper</span><br />
+                <span class="customer-position">CEO, Airbnb</span>
+              </div>
+              <div
+                class="customer-block max-width-75 wow fadeInUp"
+                data-wow-delay="0.6s"
+              >
+                <img src="img/customers/customer-3.png" alt="" />
+                <p>Tôi có thể đọc báo ngay trên ứng dụng này, nó không hề chứa các quảng cáo gây phiền</p>
+  
+                <span class="customer-name">Kristin Watson</span><br />
+                <span class="customer-position">Co-Founder, BookMyShow</span>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="row align-items-center">
-          <div class="col-lg-12">
-            <img
-              src="img/cover.png"
-              alt=""
-              class="wow fadeInUp"
-              data-wow-delay="0.6s"
-            />
+      </div>
+      <!-- /End Customer section -->
+     <!-- Start Achivment section  -->
+     <div class="achivement-section pt-60 pb-60">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-5">
+            <h1 class="wow fadeInUp" data-wow-delay="0.1s">
+              4 tháng đầu tiên phát hành ứng dụng
+            </h1>
+            <p class="wow fadeInUp" data-wow-delay="0.2s">
+              Với sự cố gắng của đội ngũ phát triển.
+            </p>
+          </div>
+          <div class="col-lg-7">
+            <div class="row">
+              <div class="col-lg-6">
+                <div
+                  class="single-achivement wow fadeInUp"
+                  data-wow-delay="0.4s"
+                >
+                  <img src="img/achivements/1.png" alt="" />
+                  <div class="text">
+                    <h4>300+</h4>
+                    <p>lượt tải xuống</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div
+                  class="single-achivement wow fadeInUp"
+                  data-wow-delay="0.6s"
+                >
+                  <img src="img/achivements/2.png" alt="" />
+                  <div class="text">
+                    <h4>439  </h4>
+                    <p>Khách hàng</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div
+                  class="single-achivement wow fadeInUp"
+                  data-wow-delay="0.8s"
+                >
+                  <img src="img/achivements/3.png" alt="" />
+                  <div class="text">
+                    <h4>2+</h4>
+                    <p>Hệ điều hành và giao diện</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="single-achivement wow fadeInUp" data-wow-delay="1s">
+                  <img src="img/achivements/4.png" alt="" />
+                  <div class="text">
+                    <h4>63 Thành phố</h4>
+                    <p>Dữ liệu được phổ cập</p>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- /End Trends Section  -->
+    <!-- /End Achivment section  -->
+    
     <!-- Start Manage Projects Section  -->
-    <div class="manage-project-section">
+    <div id="resoures" class="manage-project-section">
       <div class="container">
+        
         <div class="row align-items-center">
           <div class="col-lg-6 pt-60 pb-60">
             <h1 class="wow fadeInUp" data-wow-delay="0.2s">
-              Manage your projects from your mobile
+              Nắm bắt thông tin về dịch bệnh từ điện thoại di động của bạn
             </h1>
             <p class="wow fadeInUp" data-wow-delay="0.3s">
-              Download the app to manage your projects, keep track of the
-              progress and complete tasks without procastinating. Stay on track
-              and complete on time!
+              Tải xuống ứng dụng để cập nhật tình hình covid đang diễn biến phức tạp. Bảo vệ chính mình cũng chính là chung tay đẩy lùi dịch bệnh Covid-19.
             </p>
-            <span class="wow fadeInUp" data-wow-delay="0.7s">Get the App</span>
+            <span class="wow fadeInUp" data-wow-delay="0.7s">Tải ứng dụng ở đây</span>
             <div class="social-apps">
-              <img
+              <a href="https://github.com/ZeroRyo/VietNam-Covid-19-News/raw/main/apk/app-release.apk">
+                <img
                 src="img/hero/google-play.png"
                 alt=""
                 class="wow fadeInUp"
                 data-wow-delay="0.4s"
               />
+              </a>
+              
+              
               <img
                 src="img/hero/app-store.png"
                 alt=""
@@ -494,13 +421,13 @@
           <div class="col-lg-6">
             <div class="right-section">
               <img
-                src="img/manage-projects/Phone1.png"
+                src="./../screenshot/trangchu.png"
                 alt="Phone 1"
                 class="img-1 wow fadeInUp"
                 data-wow-delay="0.7s"
               />
               <img
-                src="img/manage-projects/Phone2.png"
+              src="./../screenshot/navbar.png"
                 alt="Phone 2"
                 class="img-2 wow fadeInUp"
                 data-wow-delay="0.8s"
@@ -511,35 +438,88 @@
       </div>
     </div>
     <!-- /End Manage Projects Section  -->
+      <!-- Start Company logos  -->
+      <div class="companies-section pt-60 pb-60">
+       
+        <div class="container">
+          <div class="row">
+            <div class="col-6 col-sm-6 col-xs-6 col-lg-2">
+              <img
+                src="img/company-logo/logo-1.png"
+                class="wow fadeInUp"
+                data-wow-delay="0.1s"
+              />
+            </div>
+            <div class="col-6 col-sm-6 col-xs-6 col-lg-2">
+              <img
+                src="img/company-logo/logo-2.png"
+                class="wow fadeInUp"
+                data-wow-delay="0.2s"
+              />
+            </div>
+            <div class="col-6 col-sm-6 col-xs-6 col-lg-2">
+              <img
+                src="img/company-logo/logo-3.png"
+                class="wow fadeInUp"
+                data-wow-delay="0.3s"
+              />
+            </div>
+            <div class="col-6 col-sm-6 col-xs-6 col-lg-2">
+              <img
+                src="img/company-logo/logo-4.png"
+                class="wow fadeInUp"
+                data-wow-delay="0.4s"
+              />
+            </div>
+            <div class="col-6 col-sm-6 col-xs-6 col-lg-2">
+              <img
+                src="img/company-logo/logo-5.png"
+                class="wow fadeInUp"
+                data-wow-delay="0.5s"
+              />
+            </div>
+            <div class="col-6 col-sm-6 col-xs-6 col-lg-2">
+              <img
+                src="img/company-logo/logo-6.png"
+                class="wow fadeInUp"
+                data-wow-delay="0.6s"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /End Company logos  -->
     <!-- Start Footer Section  -->
     <div class="footer-section pt-60 pb-60">
       <div class="container">
+       
         <div class="row">
+          
           <div class="col-lg-8">
             <div class="left-section">
               <div class="footer-logo wow fadeInUp" data-wow-delay="0.2s">
                 <img src="img/footer-logo.png" alt="" />
               </div>
               <div class="d-flex wow fadeInUp" data-wow-delay="0.4s">
-                <a href="#">Download Now</a>
-                <a href="#">License</a>
+                <a href="https://www.facebook.com/zeroryo25/">Ha Huy Hung</a>
+                <!-- <a href="#">License</a> -->
               </div>
               <div class="d-flex wow fadeInUp" data-wow-delay="0.5s">
-                <a href="#">About</a>
-                <a href="#">Features</a>
-                <a href="#">Pricing</a>
-                <a href="#">Careers</a>
-                <a href="#">Help</a>
-                <a href="#">Privacy Policy</a>
+                <a href="#">Thông tin</a>
+                <a href="#">Chức năng</a>
+                <a href="#">Tài nguyên</a>
+                <a href="#">Câu chuyện</a>
+                <!-- <a href="#">Help</a>
+                <a href="#">Privacy Policy</a> -->
               </div>
               <br />
               <span class="wow fadeInUp" data-wow-delay="0.6s">
-                © 2020 Landify UI Kit. All rights reserved
+                © 2022 Huy Hung TDTU
               </span>
             </div>
           </div>
           <div class="col-lg-4">
-            <h2 class="wow fadeInUp" data-wow-delay="0.7s">Get the App</h2>
+            <!-- <h2 class="wow fadeInUp" data-wow-delay="0.7s">Get the App</h2> -->
             <div class="social-apps">
               <img
                 src="img/hero/google-play.png"
@@ -547,21 +527,50 @@
                 class="wow fadeInUp"
                 data-wow-delay="0.7s"
               /><br />
-              <img
+              <a href="https://github.com/ZeroRyo/VietNam-Covid-19-News/raw/main/apk/app-release.apk">
+                <img
                 src="img/hero/app-store.png"
                 alt=""
                 class="wow fadeInUp"
                 data-wow-delay="0.8s"
               />
+              </a>
+             
             </div>
           </div>
         </div>
       </div>
     </div>
     <!-- /End Footer Section  -->
-
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script> -->
+<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
     <!-- Jquery script  -->
-    <script src="js/jquery.min.js"></script>
+    
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<script>
+
+var swiper = new Swiper(".image-slider", {
+    effect: "coverflow",
+    grabCursor: true,
+    centeredSlides: true,
+    slidesPerView: "auto",
+    coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 100,
+        modifier: 2,
+        slideShadows: true,
+    },
+    loop:true,
+    // autoplay: {
+    //       delay: 2000,
+    //       disableOnInteraction: false,
+    // },
+});    
+</script>
+    <script src="js/jquery.min.js"></script> 
     <!-- Bootstrap Script  -->
     <script src="js/bootstrap.min.js"></script>
     <!-- Wow js Script  -->

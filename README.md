@@ -5,7 +5,7 @@
 * Hope you like it 👍. Give me a star if you like it ⭐
 
 ### Dowload
-[![Try in PWD](https://i.pinimg.com/originals/01/d9/53/01d95329a419f52751f875daf9d0f1aa.png)](https://github.com/quocbao238/VietNam-Covid-19-News/raw/main/apk/app-release.apk)
+[![Try in PWD](https://i.pinimg.com/originals/01/d9/53/01d95329a419f52751f875daf9d0f1aa.png)](https://github.com/ZeroRyo/VietNam-Covid-19-News/raw/main/apk/app-release.apk)
 
 ### Feature
 -   flutter_bloc: 8.0.0
@@ -29,28 +29,28 @@
 
 ### Screenshot
 - Banner
-<img src="https://raw.githubusercontent.com/quocbao238/VietNam-Covid-19-News/main/screenshot/banner1.png" width="2160"/>
-<img src="https://raw.githubusercontent.com/quocbao238/VietNam-Covid-19-News/main/screenshot/banner2.png" width="2160"/> 
+<img src="https://raw.githubusercontent.com/ZeroRyo/VietNam-Covid-19-News/main/screenshot/banner1.png" width="2160"/>
+<img src="https://raw.githubusercontent.com/ZeroRyo/VietNam-Covid-19-News/main/screenshot/banner2.png" width="2160"/> 
 
 - Dashboard + Statistical
 
-<img src="https://raw.githubusercontent.com/quocbao238/VietNam-Covid-19-News/main/screenshot/dashboard.png" width="2160"/> 
+<img src="https://raw.githubusercontent.com/ZeroRyo/VietNam-Covid-19-News/main/screenshot/dashboard.png" width="2160"/> 
 
 - Drawer
 
- <img src="https://raw.githubusercontent.com/quocbao238/VietNam-Covid-19-News/main/screenshot/drawer.png" width="2160"/> 
+ <img src="https://raw.githubusercontent.com/ZeroRyo/VietNam-Covid-19-News/main/screenshot/drawer.png" width="2160"/> 
 
 - Map
 
-<img src="https://raw.githubusercontent.com/quocbao238/VietNam-Covid-19-News/main/screenshot/map.png" width="2160"/> 
+<img src="https://raw.githubusercontent.com/ZeroRyo/VietNam-Covid-19-News/main/screenshot/map.png" width="2160"/> 
 
 - Vaccinations
  
- <img src="https://raw.githubusercontent.com/quocbao238/VietNam-Covid-19-News/main/screenshot/vaccin.png" width="2160"/> 
+ <img src="https://raw.githubusercontent.com/ZeroRyo/VietNam-Covid-19-News/main/screenshot/vaccin.png" width="2160"/> 
  
 - News
 
- <img src="https://raw.githubusercontent.com/quocbao238/VietNam-Covid-19-News/main/screenshot/news.png" width="2160"/> 
+ <img src="https://raw.githubusercontent.com/ZeroRyo/VietNam-Covid-19-News/main/screenshot/news.png" width="2160"/> 
 
 
 ### Documenttation style & source

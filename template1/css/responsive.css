@@ -2,6 +2,13 @@
   .trends-section img {
     width: 100%;
   }
+  
+  .products .swiper-slide img {
+    display: block;
+    width: 90% !important;
+    height: 300px !important;
+  }
+
   .headline-section img {
     width: 100%;
   }

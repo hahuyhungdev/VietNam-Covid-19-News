@@ -5,9 +5,9 @@
   right: 40px;
   width: 60px;
   height: 60px;
-  background: #FFFFFF url("Vector.svg");
-  -webkit-box-shadow: 0 0px 10px #FFFFFF;
-          box-shadow: 0 0px 10px #FFFFFF;
+  background: #ffffff url("Vector.svg");
+  -webkit-box-shadow: 0 0px 10px #ffffff;
+  box-shadow: 0 0px 10px #ffffff;
   border-radius: 50%;
   background-size: 24px;
   background-position: center;
@@ -22,7 +22,7 @@
 
 .scrollTop:hover {
   -webkit-transform: translateY(-20px);
-          transform: translateY(-20px);
+  transform: translateY(-20px);
 }
 
 .active {
@@ -461,15 +461,15 @@ button {
   position: relative;
   width: 50%;
   margin-right: 30px;
-    height: 50%;
+  height: 50%;
   top: -40px;
 }
 
 .manage-project-section .right-section .img-2 {
   position: relative;
   width: 50%;
-  
-    height: 50%;
+
+  height: 50%;
   top: 40px;
 }
 

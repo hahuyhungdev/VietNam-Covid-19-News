@@ -55,7 +55,7 @@
 
 ### Documenttation style & source
 
-- https://www.behance.net/gallery/111256567/Covid-19-App-UI-Design-Concept
+<!-- - https://www.behance.net/gallery/111256567/Covid-19-App-UI-Design-Concept
 - https://thanhnien.vn/toan-canh-covid-19-tin-tuc-so-lieu-phan-tich-post984159.html
-- https://pub.dev/packages/floating_action_bubble
+- https://pub.dev/packages/floating_action_bubble -->
 
